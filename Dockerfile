@@ -66,11 +66,11 @@ RUN mkdir -p /tmp/ompi && \
 
 ENV BASH_ENV=/etc/bash.bashrc
 
-RUN \
- yum install -y\
-    g++\
-    git && \
-  rm -rf /var/cache/yum/*  &&\
-
 ENV PATH=$MPI_DIR/bin:$PATH
 ENV LD_LIBRARY_PATH=$MPI_DIR/lib:$LD_LIBRARY_PATH
+
+RUN \
+    yum install -y\
+      g++\
+      git && \
+    rm -f /var/cache/yum/*

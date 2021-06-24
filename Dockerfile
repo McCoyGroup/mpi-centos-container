@@ -8,9 +8,6 @@
 ##################################################################################
 FROM nvidia/cuda:11.3.1-devel-centos7
 
-ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
-
-
 # Wget
 RUN \
     yum install -y \

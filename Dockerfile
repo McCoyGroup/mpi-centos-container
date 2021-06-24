@@ -71,6 +71,5 @@ ENV LD_LIBRARY_PATH=$MPI_DIR/lib:$LD_LIBRARY_PATH
 
 RUN \
     yum install -y\
-      g++\
-      git && \
-    rm -f /var/cache/yum/*
+      g++ \
+      git
